@@ -21,8 +21,6 @@ func InitializeDatabase() {
 
 	// Migrations
 	Db.AutoMigrate(models.Book{})
-
-	log.Println("Server running at 8080...")
 }
 
 // InitializeFileServer initializes file server

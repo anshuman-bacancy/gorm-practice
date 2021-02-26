@@ -19,6 +19,9 @@ func main() {
 	router.HandleFunc("/deletebook/{name}", handler.DeleteBookHandler).Methods("DELETE")
 
 	server.InitializeDatabase()
+
+	log.Println("Server running at 8080...")
+
 	http.ListenAndServe(":8080", router)
 }
 
